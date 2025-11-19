@@ -1,0 +1,38 @@
+#need the parent class
+class Vehicle:
+    def __init__(self):
+        self.vehicle_type = None 
+        
+#need the specifics         
+class Automobile(Vehicle):
+    def __init__(self):
+        super().__init__()
+        self.year = None
+        self.make = None
+        self.model = None
+        self.doors = None
+        self.roof = None
+        
+#Where the user inputs the data for their personal vehicle 
+    def get_data(self):
+        self.vehicle_type = "car"
+        self.year = input("Enter the year: ")
+        self.make = input("Enter the make: ")
+        self.model = input("Enter the model: ")
+        self.doors = input("Enter the amount of doors: ")
+        self.roof = input("Enter the type of roof (sun roof or regular): ")
+        
+#how the information will be displayed
+    def display_data(self):
+        print(f" Vehicle Type: {self.vehicle_type}")
+        print(f" Vehicle Year: {self.year}")
+        print(f" Vehicle Make: {self.make}")
+        print(f" Vehicle Model: {self.model}")
+        print(f" Amount of Doors: {self.doors}")
+        print(f" Type of Roof: {self.roof}")
+
+#Main App 
+car = Automobile()
+car.get_data()
+print("\nVehicle Information: ")
+car.display_data()
