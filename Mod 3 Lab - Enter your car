@@ -1,3 +1,10 @@
+#Haele Edens
+#11/19/2025
+#Class: SDEV 220
+# The purpose of this app is to be able to enter your information about the make, model, year, door amt, and roof type for your personal vehicle and then have this dispalayed in an organized way. 
+
+
+
 #need the parent class
 class Vehicle:
     def __init__(self):
